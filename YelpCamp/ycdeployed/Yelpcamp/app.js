@@ -39,49 +39,8 @@ passport.deserializeUser(User.deserializeUser());
 mongoose.connect("mongodb://localhost/yelp_camp");
 console.log("connected to db yelp_camp");
 
-
-//Schema setup
-// var campgroundSchema=new mongoose.Schema({
-//     name:String,
-//     image:String,
-//     description:String
-// });
-
-// var Campground = mongoose.model("Campground",campgroundSchema);
-
-
-// Campground.create(
-//         {
-//           name :"Yosemite",
-//           image : "https://jameskaiser.com/wp-content/uploads/2015/03/camp-4-yosemite-valley.jpg",
-//           description:"Yosemite campsite in USA"
         
-//         },
-//         function(err,campgrnd)
-//         {
-//             if(err)
-//             {
-//                  console.log("error");  
-//             }
-//             else
-//             {   
-//                     console.log("Newly created campground");
-//                     console.log("Campground "+campgrnd);
-//             }
-//         }
-        
-    
-//     );
 
-
-
-// var campgrounds = [
-//         {name :"Zion",image : "https://www.nps.gov/zion/planyourvisit/images/South_CG_r_1.jpg"},
-//         {name:"Kasol",image:"http://d2847ql9t214mi.cloudfront.net/wp-content/uploads/2015/07/Camping-in-Kasol-Himachal-Pradesh.jpg"},
-//         {name:"Yosemite",image:"https://jameskaiser.com/wp-content/uploads/2015/03/camp-4-yosemite-valley.jpg"},
-//         {name:"Triund",image:"http://www.ecocampuk.co.uk/wp-content/uploads/2011/08/Sussex-Campsite-with-Bell-Tents-7.jpeg"},
-//         {name:"KP",image:"http://www.dismalscanyon.com/campsites/images/sleeping_water_5177_900px.jpg"}
-//         ] ; 
 
 app.use(bodyParser.urlencoded({extended:true}));
 
